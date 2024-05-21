@@ -1,6 +1,6 @@
 const path = require('path');
 
-const full = path.join('some', 'work', 'ex.txt');
+const full = path.join('some', 'work  ', 'ex.txt  ');
 
 console.log(full);
 console.log(`파일 절대 경로 : ${__filename}`);
