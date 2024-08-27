@@ -1,5 +1,6 @@
 package org.scoula.board.domain;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +18,9 @@ public class BoardVO {
     private String title;
     private String content;
     private String writer;
-    private List<BoardAttachmentVO> attaches;
     private Date regDate;
     private Date updateDate;
+    // 첨부파일
+    private List<BoardAttachmentVO> attaches;
+
 }

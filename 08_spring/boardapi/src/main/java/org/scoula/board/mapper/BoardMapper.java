@@ -1,12 +1,9 @@
 package org.scoula.board.mapper;
-import java.util.List;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
-import org.apache.ibatis.annotations.Select;
 import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
+
+import java.util.List;
 
 // mapper 연결 주의 패키지 경로 일치
 // sql 실행할 수 있도록 DAO

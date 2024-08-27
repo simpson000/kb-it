@@ -4,7 +4,6 @@ import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.dto.BoardDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface BoardService {
     public List<BoardDTO> getList();

@@ -16,7 +16,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-
 public class BoardDTO {
     private Long no;
     private String title;
@@ -24,9 +23,12 @@ public class BoardDTO {
     private String writer;
     private Date regDate;
     private Date updateDate;
-    private List<BoardAttachmentVO> attaches;
-    private List<MultipartFile> files = new ArrayList<>();
 
+    // 첨부 파일
+    private List<BoardAttachmentVO> attaches;
+    List<MultipartFile> files = new ArrayList<>();
+
+    // VO --> DTO 변환
     public static BoardDTO of(BoardVO vo) {
         return vo == null ? null : BoardDTO.builder()
                 .no(vo.getNo())
@@ -39,6 +41,7 @@ public class BoardDTO {
                 .build();
     }
 
+    // DTO --> VO 변환
     public BoardVO toVo() {
         return BoardVO.builder()
                 .no(no)
